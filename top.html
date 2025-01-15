@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>top Command - Linux Commands Reference</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="command-section">
+        <div class="command-details">
+            <div class="command-header">
+                <h2><i class="fas fa-chart-line"></i> top Command</h2>
+                <span class="command-type">System Monitoring</span>
+            </div>
+
+            <div class="command-description">
+                <p>The top command provides a dynamic real-time view of a running system. It displays system summary information and a list of processes or threads currently managed by the Linux kernel.</p>
+            </div>
+
+            <div class="syntax-box">
+                <h3>Basic Syntax</h3>
+                <code>top [options]</code>
+            </div>
+
+            <div class="key-options">
+                <h3>Common Options</h3>
+                <ul>
+                    <li><kbd>-b</kbd> - Batch mode operation</li>
+                    <li><kbd>-n NUM</kbd> - Number of iterations</li>
+                    <li><kbd>-d SEC</kbd> - Screen update interval</li>
+                    <li><kbd>-p PID</kbd> - Monitor specific process ID</li>
+                    <li><kbd>-u USER</kbd> - Display specific user processes</li>
+                </ul>
+            </div>
+
+            <div class="interactive-keys">
+                <h3>Interactive Commands</h3>
+                <ul>
+                    <li><kbd>h</kbd> or <kbd>?</kbd> - Help screen</li>
+                    <li><kbd>q</kbd> - Quit top</li>
+                    <li><kbd>k</kbd> - Kill a process</li>
+                    <li><kbd>r</kbd> - Renice a process</li>
+                    <li><kbd>f</kbd> - Field management</li>
+                    <li><kbd>1</kbd> - Toggle CPU cores view</li>
+                </ul>
+            </div>
+
+            <div class="examples">
+                <h3>Examples</h3>
+                <pre><code># Basic usage
+top
+
+# Update every 2 seconds
+top -d 2
+
+# Show only processes of user 'john'
+top -u john
+
+# Monitor specific process ID
+top -p 1234</code></pre>
+            </div>
+
+            <div class="tips">
+                <h3>Pro Tips</h3>
+                <ul>
+                    <li>Use <kbd>M</kbd> to sort by memory usage</li>
+                    <li>Use <kbd>P</kbd> to sort by CPU usage</li>
+                    <li>Use <kbd>c</kbd> to show command line path</li>
+                    <li>Use <kbd>W</kbd> to save current settings</li>
+                </ul>
+            </div>
+
+            <div class="related-commands">
+                <h3>Related Commands</h3>
+                <div class="command-tags">
+                    <a href="htop.html" class="command-tag">htop</a>
+                    <a href="ps.html" class="command-tag">ps</a>
+                    <a href="kill.html" class="command-tag">kill</a>
+                    <a href="nice.html" class="command-tag">nice</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
