@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kill Command - Linux Commands Reference</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div class="command-section">
+        <div class="command-details">
+            <div class="command-header">
+                <h2>kill Command</h2>
+                <span class="command-type">Process Management</span>
+            </div>
+
+            <div class="command-description">
+                <p>The kill command sends signals to processes. By default, it sends the TERM signal to terminate a process, but it can send various other signals for different purposes.</p>
+            </div>
+
+            <div class="syntax-box">
+                <h3>Basic Syntax</h3>
+                <code>kill [options] pid</code>
+            </div>
+
+            <div class="key-options">
+                <h3>Common Signals</h3>
+                <ul>
+                    <li><kbd>SIGTERM (15)</kbd> - Graceful termination</li>
+                    <li><kbd>SIGKILL (9)</kbd> - Immediate termination</li>
+                    <li><kbd>SIGHUP (1)</kbd> - Hangup</li>
+                    <li><kbd>SIGSTOP (19)</kbd> - Stop process</li>
+                </ul>
+            </div>
+
+            <div class="examples">
+                <h3>Examples</h3>
+                <pre><code># Basic termination
+kill 1234
+
+# Force kill process
+kill -9 1234
+
+# Kill by process name (using pkill)
+pkill firefox
+
+# List all signals
+kill -l</code></pre>
+            </div>
+
+            <div class="tips">
+                <h3>Pro Tips</h3>
+                <ul>
+                    <li>Use SIGTERM first before SIGKILL</li>
+                    <li>killall can terminate multiple processes</li>
+                    <li>Use ps or top to find PIDs</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

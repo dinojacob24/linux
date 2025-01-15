@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tail Command - Linux Commands Reference</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div class="command-section">
+        <div class="command-details">
+            <div class="command-header">
+                <h2>tail Command</h2>
+                <span class="command-type">File Viewing</span>
+            </div>
+
+            <div class="command-description">
+                <p>The tail command outputs the last part of files. It's particularly useful for viewing log files and monitoring file changes in real-time.</p>
+            </div>
+
+            <div class="syntax-box">
+                <h3>Basic Syntax</h3>
+                <code>tail [options] [file]</code>
+            </div>
+
+            <div class="key-options">
+                <h3>Common Options</h3>
+                <ul>
+                    <li><kbd>-n N</kbd> - Output last N lines</li>
+                    <li><kbd>-f</kbd> - Follow file changes</li>
+                    <li><kbd>-F</kbd> - Follow and retry if file inaccessible</li>
+                    <li><kbd>-c N</kbd> - Output last N bytes</li>
+                </ul>
+            </div>
+
+            <div class="examples">
+                <h3>Examples</h3>
+                <pre><code># Show last 10 lines
+tail file.txt
+
+# Show last 20 lines
+tail -n 20 file.txt
+
+# Monitor file in real-time
+tail -f log.txt
+
+# Show last 100 bytes
+tail -c 100 file.txt</code></pre>
+            </div>
+
+            <div class="tips">
+                <h3>Pro Tips</h3>
+                <ul>
+                    <li>Use -f for log monitoring</li>
+                    <li>Combine with grep for filtering</li>
+                    <li>Use multiple files simultaneously</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

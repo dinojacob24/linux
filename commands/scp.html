@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scp Command - Linux Commands Reference</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div class="command-section">
+        <div class="command-details">
+            <div class="command-header">
+                <h2>scp Command</h2>
+                <span class="command-type">File Transfer</span>
+            </div>
+
+            <div class="command-description">
+                <p>SCP (Secure Copy) allows secure file transfer between hosts on a network. It uses SSH for data transfer and provides the same authentication and security as SSH.</p>
+            </div>
+
+            <div class="syntax-box">
+                <h3>Basic Syntax</h3>
+                <code>scp [options] source destination</code>
+            </div>
+
+            <div class="key-options">
+                <h3>Common Options</h3>
+                <ul>
+                    <li><kbd>-r</kbd> - Recursively copy directories</li>
+                    <li><kbd>-P PORT</kbd> - Specify port</li>
+                    <li><kbd>-i KEY</kbd> - Identity file</li>
+                    <li><kbd>-p</kbd> - Preserve modification times</li>
+                </ul>
+            </div>
+
+            <div class="examples">
+                <h3>Examples</h3>
+                <pre><code># Copy local file to remote
+scp file.txt user@remote:/path/to/destination
+
+# Copy remote file to local
+scp user@remote:/path/to/file local_file.txt
+
+# Copy entire directory
+scp -r local_dir user@remote:/path/to/dir
+
+# Using specific port
+scp -P 2222 file.txt user@remote:/path/</code></pre>
+            </div>
+
+            <div class="tips">
+                <h3>Pro Tips</h3>
+                <ul>
+                    <li>Use compression (-C) for slow connections</li>
+                    <li>Use -v for verbose output when troubleshooting</li>
+                    <li>Configure SSH keys for password-less transfers</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ping Command - Linux Commands Reference</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div class="command-section">
+        <div class="command-details">
+            <div class="command-header">
+                <h2>ping Command</h2>
+                <span class="command-type">Network Diagnostic</span>
+            </div>
+
+            <div class="command-description">
+                <p>The ping command sends ICMP ECHO_REQUEST packets to network hosts to test connectivity and measure response time.</p>
+            </div>
+
+            <div class="syntax-box">
+                <h3>Basic Syntax</h3>
+                <code>ping [options] destination</code>
+            </div>
+
+            <div class="key-options">
+                <h3>Common Options</h3>
+                <ul>
+                    <li><kbd>-c count</kbd> - Stop after sending count packets</li>
+                    <li><kbd>-i interval</kbd> - Wait interval seconds between packets</li>
+                    <li><kbd>-s size</kbd> - Specify packet size in bytes</li>
+                    <li><kbd>-W timeout</kbd> - Time to wait for response</li>
+                </ul>
+            </div>
+
+            <div class="examples">
+                <h3>Examples</h3>
+                <pre><code># Basic ping
+ping google.com
+
+# Send specific number of packets
+ping -c 4 192.168.1.1
+
+# Change packet interval
+ping -i 2 google.com
+
+# Set packet size
+ping -s 100 google.com
+
+# Set timeout
+ping -W 2 192.168.1.1</code></pre>
+            </div>
+
+            <div class="tips">
+                <h3>Pro Tips</h3>
+                <ul>
+                    <li>Use Ctrl+C to stop continuous ping</li>
+                    <li>Check both domain names and IP addresses</li>
+                    <li>Use -q for quiet output (summary only)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

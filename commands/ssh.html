@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ssh Command - Linux Commands Reference</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div class="command-section">
+        <div class="command-details">
+            <div class="command-header">
+                <h2>ssh Command</h2>
+                <span class="command-type">Remote Access</span>
+            </div>
+
+            <div class="command-description">
+                <p>SSH (Secure Shell) is a protocol for securely connecting to remote systems. It provides encrypted communications between two untrusted hosts over an insecure network.</p>
+            </div>
+
+            <div class="syntax-box">
+                <h3>Basic Syntax</h3>
+                <code>ssh [options] [user@]hostname [command]</code>
+            </div>
+
+            <div class="key-options">
+                <h3>Common Options</h3>
+                <ul>
+                    <li><kbd>-p PORT</kbd> - Connect to specific port</li>
+                    <li><kbd>-i KEY</kbd> - Use specific identity file</li>
+                    <li><kbd>-X</kbd> - Enable X11 forwarding</li>
+                    <li><kbd>-v</kbd> - Verbose mode</li>
+                </ul>
+            </div>
+
+            <div class="examples">
+                <h3>Examples</h3>
+                <pre><code># Basic connection
+ssh username@hostname
+
+# Connect to specific port
+ssh -p 2222 username@hostname
+
+# Use identity file
+ssh -i ~/.ssh/mykey username@hostname
+
+# Execute remote command
+ssh username@hostname 'ls -la'</code></pre>
+            </div>
+
+            <div class="tips">
+                <h3>Pro Tips</h3>
+                <ul>
+                    <li>Use SSH keys instead of passwords for better security</li>
+                    <li>Configure ~/.ssh/config for easier connections</li>
+                    <li>Use agent forwarding for convenient key management</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

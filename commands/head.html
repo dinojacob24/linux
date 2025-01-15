@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>head Command - Linux Commands Reference</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div class="command-section">
+        <div class="command-details">
+            <div class="command-header">
+                <h2>head Command</h2>
+                <span class="command-type">File Viewing</span>
+            </div>
+
+            <div class="command-description">
+                <p>The head command displays the beginning of text files. By default, it shows the first 10 lines of each file.</p>
+            </div>
+
+            <div class="syntax-box">
+                <h3>Basic Syntax</h3>
+                <code>head [options] [file]</code>
+            </div>
+
+            <div class="key-options">
+                <h3>Common Options</h3>
+                <ul>
+                    <li><kbd>-n N</kbd> - Output first N lines</li>
+                    <li><kbd>-c N</kbd> - Output first N bytes</li>
+                    <li><kbd>-q</kbd> - Never print headers</li>
+                    <li><kbd>-v</kbd> - Always print headers</li>
+                </ul>
+            </div>
+
+            <div class="examples">
+                <h3>Examples</h3>
+                <pre><code># Show first 10 lines
+head file.txt
+
+# Show first 20 lines
+head -n 20 file.txt
+
+# Show first 100 bytes
+head -c 100 file.txt
+
+# Show first lines of multiple files
+head file1.txt file2.txt</code></pre>
+            </div>
+
+            <div class="tips">
+                <h3>Pro Tips</h3>
+                <ul>
+                    <li>Use with pipes to limit command output</li>
+                    <li>Combine with tail for middle section</li>
+                    <li>Use -q when processing multiple files</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>curl Command - Linux Commands Reference</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div class="command-section">
+        <div class="command-details">
+            <div class="command-header">
+                <h2>curl Command</h2>
+                <span class="command-type">Network Transfer</span>
+            </div>
+
+            <div class="command-description">
+                <p>curl is a tool for transferring data from or to a server using various protocols including HTTP, HTTPS, FTP, FTPS, SCP, SFTP, and more.</p>
+            </div>
+
+            <div class="syntax-box">
+                <h3>Basic Syntax</h3>
+                <code>curl [options] [URL]</code>
+            </div>
+
+            <div class="key-options">
+                <h3>Common Options</h3>
+                <ul>
+                    <li><kbd>-o</kbd> - Write output to file</li>
+                    <li><kbd>-O</kbd> - Write output to file with remote name</li>
+                    <li><kbd>-X</kbd> - Specify request method</li>
+                    <li><kbd>-H</kbd> - Add header to request</li>
+                    <li><kbd>-d</kbd> - Send POST data</li>
+                </ul>
+            </div>
+
+            <div class="examples">
+                <h3>Examples</h3>
+                <pre><code># Download a file
+curl -O https://example.com/file.zip
+
+# Send POST request
+curl -X POST -d "data=value" https://api.example.com
+
+# Include headers
+curl -H "Authorization: Bearer token" https://api.example.com
+
+# Follow redirects
+curl -L https://example.com</code></pre>
+            </div>
+
+            <div class="tips">
+                <h3>Pro Tips</h3>
+                <ul>
+                    <li>Use -v for verbose output</li>
+                    <li>Use -k to allow insecure connections</li>
+                    <li>Use --progress-bar for download progress</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>diff Command - Linux Commands Reference</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div class="command-section">
+        <div class="command-details">
+            <div class="command-header">
+                <h2>diff Command</h2>
+                <span class="command-type">File Comparison</span>
+            </div>
+
+            <div class="command-description">
+                <p>The diff command compares files line by line and shows the differences between them. It's commonly used to compare text files and create patches.</p>
+            </div>
+
+            <div class="syntax-box">
+                <h3>Basic Syntax</h3>
+                <code>diff [options] file1 file2</code>
+            </div>
+
+            <div class="key-options">
+                <h3>Common Options</h3>
+                <ul>
+                    <li><kbd>-u</kbd> - Unified format output</li>
+                    <li><kbd>-r</kbd> - Recursively compare directories</li>
+                    <li><kbd>-i</kbd> - Ignore case differences</li>
+                    <li><kbd>-b</kbd> - Ignore changes in whitespace</li>
+                </ul>
+            </div>
+
+            <div class="examples">
+                <h3>Examples</h3>
+                <pre><code># Compare two files
+diff file1.txt file2.txt
+
+# Compare with unified format
+diff -u file1.txt file2.txt
+
+# Compare directories
+diff -r dir1/ dir2/
+
+# Create a patch file
+diff -u original.txt modified.txt > changes.patch</code></pre>
+            </div>
+
+            <div class="tips">
+                <h3>Pro Tips</h3>
+                <ul>
+                    <li>Use colordiff for colored output</li>
+                    <li>Use -w to ignore all whitespace</li>
+                    <li>Use vimdiff for interactive comparison</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ifconfig Command - Linux Commands Reference</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div class="command-section">
+        <div class="command-details">
+            <div class="command-header">
+                <h2>ifconfig Command</h2>
+                <span class="command-type">Network Configuration</span>
+            </div>
+
+            <div class="command-description">
+                <p>ifconfig (interface configuration) is used to configure and display information about network interfaces on the system.</p>
+            </div>
+
+            <div class="syntax-box">
+                <h3>Basic Syntax</h3>
+                <code>ifconfig [interface] [options]</code>
+            </div>
+
+            <div class="key-options">
+                <h3>Common Options</h3>
+                <ul>
+                    <li><kbd>up</kbd> - Activate interface</li>
+                    <li><kbd>down</kbd> - Deactivate interface</li>
+                    <li><kbd>netmask</kbd> - Set network mask</li>
+                    <li><kbd>broadcast</kbd> - Set broadcast address</li>
+                </ul>
+            </div>
+
+            <div class="examples">
+                <h3>Examples</h3>
+                <pre><code># Display all interfaces
+ifconfig
+
+# Configure IP address
+ifconfig eth0 192.168.1.100
+
+# Enable interface
+ifconfig eth0 up
+
+# Disable interface
+ifconfig eth0 down
+
+# Set netmask and broadcast
+ifconfig eth0 192.168.1.100 netmask 255.255.255.0 broadcast 192.168.1.255</code></pre>
+            </div>
+
+            <div class="tips">
+                <h3>Pro Tips</h3>
+                <ul>
+                    <li>Use -a to show all interfaces, even if down</li>
+                    <li>Modern systems prefer ip command over ifconfig</li>
+                    <li>Check both IPv4 and IPv6 configurations</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
